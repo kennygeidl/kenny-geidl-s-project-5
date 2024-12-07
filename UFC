@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All About UFC</title>
+  <link rel="stylesheet" href="project5.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home" class="home">Home</a></li>
+      <li><a href="#fighters">Favorite Fighters</a></li>
+      <li><a href="#fights">Favorite Fighters</a></li>
+      <li><a href="#changes">Things I'd Change About the UFC</a></li>
+      <li><a href="#inspiration">What I Love About the UFC</a></li>
+    </ul>
+  </nav>
+  <header id="home">
+    <h1>All About UFC</h1>
+    <p>Dive Into My Biggest Passion At The Moment: UFC!</p>
+  </header>
+  <section id="fighters">
+    <h2>My Favorite Fighters</h2>
+    <div class="cards-container">
+      <div class="card">
+        <h3>Jack Della Maddalena </h3>
+        <div class="addtxt">Arguably the best boxer in the UFC, and an absolute menace in the 170 LB division.</div>
+        <h3>Chito Vera </h3>
+        <div class="addtxt">As tough as they come, you never want to miss a Chito Vera fight.</div>
+        <h3>Paulo Costa </h3>
+        <div class="addtxt">Built like a bodybuilder, Costa is never not exciting.</div>
+      </div>
+    </div>
+    <a href="auxiliary_files/fighters.html">Learn More About My Fighters</a>
+  </section>
+  <section id="fights">
+    <h2>Top UFC Fights</h2>
+    </div>
+    <a href="auxiliary_files/fights.html">Read More About Iconic Fights</a>
+  </section>
+  <section id="changes">
+    <h2>Things I'd Change About the UFC</h2>
+    <p>Fighter pay, judging transparency, and better safety protocols are essential for a fairer UFC.</p>
+    <a href="auxiliary_files/changes.html">Learn More</a>
+  </section>
+  <section id="inspiration">
+    <h2>Why the UFC Inspires Me</h2>
+    <blockquote>"We fall, but we get up because the ground is no place for a champion." - Dustin Poirer</blockquote>
+    <p>For me, MMA is exactly what the name is. It's an art form in the truest sense. </p>
+  </section>
+  <footer>
+    <p>Created by Kenny G.</p>
+  </footer>
+</body>
+</html>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: red;
+  }
+  
+  /* Header Section */
+  header {
+    background-image: url(/images/octagon.jpg);
+    background-size: cover;
+    color: grey;
+    text-align: center;
+    padding: 5em 0;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2em;
+  }
+  
+  section h2 {
+    text-align: center;
+    color: black;
+  }
+  
+  /* Cards Section */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .addtxt {
+    padding: 1em;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  header {
+    background-image: url(images/jdm.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  header {
+    background-image: url(images/chito.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  header {
+    background-image: url(images/costa.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="fighters.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="project5.css">
+  <!-- Auxiliary CSS -->
+  <link rel="stylesheet" href="fighters.css">
+  <link rel="stylesheet" href="fighters.css">
+</head>
+<body>
+  <!-- Header Component -->
+  <header>
+    <!-- Include reusable component -->
+    <!-- You may use server-side includes or frameworks for dynamic imports -->
+    <?php include 'components/header.html'; ?>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>FIGHTERS:</h1>
+    <li>Jack Della Maddalena became one of my favorite fighters after he showcased his fantastic boxing against Gilbert Burns, and I believe that he is next to be champion in the welterweight division.</li>
+    <li>Chito Vera has shown nothing but unGodly toughness throughout his MMA career, having been in so many wars and only being knocked down twice impressive. His fight against Frankie Edgar is a constant rewatch for me.</li>
+    <li>Paulo Costa looks big and he fights big too. When he lets his hands go and swings for the fences, he's a killer.</li>
+  </main>
+
+  <!-- Footer Component -->
+  <footer>
+    <?php include 'components/footer.html'; ?>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/helpers.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigation Menu Styles */
+  nav ul {
+    list-style: none;
+    background-color: #444;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; /* Slightly darker hover effect */
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="fights.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="project5.css">
+  <!-- Auxiliary CSS -->
+  <link rel="stylesheet" href="fights.css">
+  <link rel="stylesheet" href="fights.css">
+</head>
+<body>
+  <!-- Header Component -->
+  <header>
+    <!-- Include reusable component -->
+    <!-- You may use server-side includes or frameworks for dynamic imports -->
+    <?php include 'components/header.html'; ?>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>FAVORITE FIGHTS:</h1>
+    <li>Usman Vs. Covington 1</li>
+    <li>Costa vs. Rockhold</li>
+    <li>Makhachev vs. Poirer</li>
+  </main>
+
+  <!-- Footer Component -->
+  <footer>
+    <?php include 'components/footer.html'; ?>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/helpers.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigation Menu Styles */
+  nav ul {
+    list-style: none;
+    background-color: #444;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; /* Slightly darker hover effect */
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="changes.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="project5.css">
+  <!-- Auxiliary CSS -->
+  <link rel="stylesheet" href="changes.css">
+  <link rel="stylesheet" href="changes.css">
+</head>
+<body>
+  <!-- Header Component -->
+  <header>
+    <!-- Include reusable component -->
+    <!-- You may use server-side includes or frameworks for dynamic imports -->
+    <?php include 'components/header.html'; ?>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>CHANGES:</h1>
+    <p>Better fighter pay, more health benefits, better matchmaking.</p>
+  </main>
+
+  <!-- Footer Component -->
+  <footer>
+    <?php include 'components/footer.html'; ?>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/helpers.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigation Menu Styles */
+  nav ul {
+    list-style: none;
+    background-color: #444;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; /* Slightly darker hover effect */
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
